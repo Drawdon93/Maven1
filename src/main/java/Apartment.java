@@ -10,6 +10,7 @@ public class Apartment {
     private double cenazametr;
     private double fullPrice;
 
+    //test
 
 }
 
