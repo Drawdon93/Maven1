@@ -4,24 +4,31 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        double a=0.95;
-        double srednia;
-        Apartment apartment1 = new Apartment("ząbki",26,5000, 26*5000*a);
-        Apartment apartment2 = new Apartment("WWA",260,40000,260*40000*a);
-        Apartment apartment3 = new Apartment("Pilawa",310,8000,310*8000*a);
+        double a = 0.95;
+        //double srednia;
+        Apartment apartment1 = new Apartment("ząbki", 26, 5000, 26 * 5000 * a);
+        Apartment apartment2 = new Apartment("WWA", 260, 40000, 10 * 4000 * a);
+        Apartment apartment3 = new Apartment("Pilawa", 310, 8000, 30 * 8000 * a);
 
 
         List<Apartment> apartmentList = new ArrayList<>();
-        apartmentList.addAll(Arrays.asList(apartment1,apartment2,apartment3));
+        apartmentList.addAll(Arrays.asList(apartment1, apartment2, apartment3));
         System.out.print(apartmentList);
-for(Apartment one :apartmentList){
-srednia=apartment1.getCenazametr()}
 
-//        EmpL empL = new EmpL();
-//        empL.setAge(12);
-//        System.out.println(empL);
+        for (Apartment apartment : apartmentList) {
+            System.out.println(apartment.getMiasto());
+            System.out.println("cena po zniżce: " + (apartment.getPowierzchnia() * apartment.getCenazametr()));
+        }
+        double sum = 0;
+        for (Apartment one : apartmentList) {
+            sum += one.getFullPrice();
+        }
+               System.out.format("średnia cena mieszkań to: %.2f", sum / apartmentList.size());
     }
-}
+
+
+    }
+
 //Zadanie Mieszkania
 //Stwórz klasę Apartment , która będzie zawierała informacje o mieście, w którym
 //się znajduje, powierzchni w metrach kwadratowych, oraz cenie za metr
