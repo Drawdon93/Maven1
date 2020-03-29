@@ -51,7 +51,7 @@ public class Main {
         Blok blok1 = new Blok();
         blok1.setLiczbaPokoi(5);
         blok1.setLiczbaOkien(7);
-        blok1.setLiczbaMetrów(85);
+        blok1.setLiczbaMetrów(85000);
         blok1.setLiczbaMieszkań(12);
         blok1.setCzyGaraż(true);
         blok1.setCzyOgródek(false);
@@ -62,7 +62,7 @@ public class Main {
         Blok blok2 = new Blok();
         blok2.setLiczbaPokoi(2);
         blok2.setLiczbaOkien(4);
-        blok2.setLiczbaMetrów(38);
+        blok2.setLiczbaMetrów(20000);
         blok2.setLiczbaMieszkań(17);
         blok2.setCzyGaraż(false);
         blok2.setCzyOgródek(false);
