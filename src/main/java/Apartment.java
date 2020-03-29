@@ -3,15 +3,14 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Apartment {
+public class Apartment extends Budynek {
 
     private String miasto;
     private double powierzchnia;
-    private double cenazametr;
+    private double cenaZaMetr;
     private double fullPrice;
 
     //test
-
 }
 
 
