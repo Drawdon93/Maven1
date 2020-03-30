@@ -25,7 +25,6 @@ public class Main {
         }
         System.out.format("Średnia cena mieszkań to: %.2f", sum / apartmentList.size());
 
-
         Dom dom1 = new Dom();
         dom1.setLiczbaPokoi(4);
         dom1.setLiczbaOkien(8);
@@ -49,8 +48,8 @@ public class Main {
         System.out.println("Dom prezentuje się następująco: " + dom2);
 
         Blok blok1 = new Blok();
-        blok1.setLiczbaPokoi(5);
-        blok1.setLiczbaOkien(7);
+        blok1.setLiczbaPokoi(85);
+        blok1.setLiczbaOkien(120);
         blok1.setLiczbaMetrów(85000);
         blok1.setLiczbaMieszkań(12);
         blok1.setCzyGaraż(true);
@@ -60,8 +59,8 @@ public class Main {
         System.out.println("Blok prezentuje się następująco: " + blok1);
 
         Blok blok2 = new Blok();
-        blok2.setLiczbaPokoi(2);
-        blok2.setLiczbaOkien(4);
+        blok2.setLiczbaPokoi(71);
+        blok2.setLiczbaOkien(99);
         blok2.setLiczbaMetrów(20000);
         blok2.setLiczbaMieszkań(17);
         blok2.setCzyGaraż(false);

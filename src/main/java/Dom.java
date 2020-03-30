@@ -1,17 +1,10 @@
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.ToString;
 
 @Data
-public class Dom extends Budynek {
+@AllArgsConstructor
+@ToString(callSuper = true)
 
-    public String toString() {
-        return "Dom{" +
-                "liczba pokoi wynosi= " + liczbaPokoi +
-                ", liczba okien wynosi= " + liczbaOkien +
-                ", liczba metrów wynosi= " + liczbaMetrów +
-                ", liczba mieszkań wynosi= " + liczbaMieszkań +
-                ", czy ma garaż= " + czyGaraż +
-                ", czy ma ogródek= " + czyOgródek +
-                ", czyJestSiłownia= " + czyJestSiłownia +
-                '}';
-    }
+public class Dom extends Budynek {
 }
